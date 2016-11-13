@@ -1,0 +1,25 @@
+{
+  "name": "express-learning",
+  "version": "1.0.0",
+  "description": "```js\r const express = require('express');  // 第三方模块\r let app = express();\r ```",
+  "main": "1.express.js",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanzhao1993/express-learning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanzhao1993/express-learning/issues"
+  },
+  "homepage": "https://github.com/ryanzhao1993/express-learning#readme"
+}
