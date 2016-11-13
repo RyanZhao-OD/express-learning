@@ -9,10 +9,8 @@ function test() {
         else {
             return;
         }
-
     }
     fn();
-
 }
 
 test();

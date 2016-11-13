@@ -1,3 +1,26 @@
+## 使用到的模块
+- 核心模块
+```js
+const path = require('path');
+const http = require('http');
+const url = require('url');
+const util = require('util');
+const fs = require('fs');
+const querystring = require('querystring');
+```
+
+- 第三方模块
+```
+"dependencies": {
+  "body-parser": "^1.15.2",
+  "cookie-parser": "^1.4.3",
+  "ejs": "^2.5.2",
+  "express": "^4.14.0",
+  "express-session": "^1.14.2"
+},
+"devDependencies": {},
+```
+
 ## 第三方模块express
 ```js
 const express = require('express');  // 第三方模块
@@ -16,3 +39,4 @@ app.listen = function listen() {
 ```
 
 ##中间件
+静态文件中间件

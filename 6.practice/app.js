@@ -18,7 +18,7 @@ app.engine('.html', ejs.__express);
 //GET请求 reg的时候返回空白的注册表单
 // 可以通过query是否有值来判断是否是提交
 
-app.get('/reg',function(request, response){
+app.get('/reg', function(request, response){
     let username = request.query.username;
     let password = request.query.password;
     if(username) {

@@ -39,6 +39,9 @@ app.get('/login', function(request, response) {  //匹配第一个
 app.get('/login', function(request, response) {
     response.end('get login2 登录');
 });
+
+// 客户端在发送post请求的时候，会把输入的表单转成queryString
+// 并且放在请求体里发送给服务器
 app.post('/login', function(request, response) {
     response.end('post login 登录');
 });

@@ -8,6 +8,7 @@
 const express = require('express');
 const url = require('url');
 let app = express();
+
 app.get('/', function (request, response) {
     // 访问http://localhost:8080/?name=xxx&age=13时
     console.log(request.path);    // /
