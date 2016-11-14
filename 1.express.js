@@ -1,5 +1,5 @@
 const express = require('express');  // 第三方模块
-// const express = require('express/index.js');
+// const express = require('express/index.js');  // 默认寻找express模块下index.js文件
 
 
 let app = express();

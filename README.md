@@ -1,3 +1,8 @@
+## todo
+函数式编程
+curl
+
+
 ## 使用到的模块
 - 核心模块
 ```js
@@ -39,4 +44,32 @@ app.listen = function listen() {
 ```
 
 ##中间件
-静态文件中间件
+使用中间件. 中间件要写在前面
+和路由的联系和区别
+
+1. 他们都在同一个数组中
+2. 中间件不匹配路径和方法名，路由要匹配路径和方法名
+3. 中间件多了next参数，它能决定是否继续
+4. 路由后面的中间件不会再执行
+
+```js
+// 普通中间件
+app.use(function(request, response, next) {
+    // ...
+    next();
+});
+
+// 错误中间件
+app.use(function(error, request, response, next) {
+    // ...
+    next();
+});
+```
+
+ 
+中间件模块：
+
+- body-parser 解析请求体
+- cookie-parser 解析cookie
+- express-session 使用session
+
