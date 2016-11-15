@@ -5,7 +5,6 @@ let app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.post('/login', function(request, response) {
     let user = request.body;
-    console.log(user);
-    response.send('aa');
+    response.send(user);
 });
 app.listen(8080);
